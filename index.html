@@ -36,8 +36,8 @@
 <body class="font-sora">
     <header class="container mx-auto mb-18 lg:mb-22">
         <!-- navbar section -->
-        <div class="navbar bg-base-100 flex">
-          <div class="flex-none flex-row-reverse">
+        <div class="navbar bg-base-100 flex ">
+          <div class="flex lg:block flex-row-reverse justify-between border-b-2 border-spacing-5 w-full lg:w-auto">
             <div class="dropdown">
               <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
                 <svg
@@ -55,7 +55,7 @@
               </div>
               <ul
                 tabindex="0"
-                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow relative -left-32">
                 <li><a>Product</a></li>
                 <li><a>Services</a></li>
                 <li><a>Contact us</a></li>
@@ -137,7 +137,7 @@
          <!-- Popular products section -->
           <section class="bg-slate-300 py-10 px-4 mb-22">
             <div class="container mx-auto">
-              <h3 class="text-nature-primary text-2xl font-bold px-5">Popular Products</h3>
+              <h3 class="text-nature-primary text-2xl font-bold px-5 pb-8">Popular Products</h3>
               <div class="grid grid-cols-1 lg:grid-cols-2 gap-7 ">
                 <div class="">
                   <div class="card bg-lime-200 rounded-xl">
@@ -241,7 +241,7 @@
             </div>
           </section>
           <!-- Offers section -->
-           <section class="mt-10 container mx-auto mb-24">
+          <section class="mt-10 container mx-auto mb-22">
             <h3 class="text-nature-primary text-2xl font-bold px-5 py-8">Arrival & Offers</h3>
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 px-4">
               <div class=" rounded-xl bg-lime-900">
@@ -270,9 +270,64 @@
               </div>          
             </div>
            </section>
+           <!-- Client section -->
+           <section class=" container mx-auto mt-10 mb-20">
+            <div class="grid grid-cols-1 lg:grid-cols-2 bg-gradient-to-r from-lime-500 to-green-500 py-6 px-6 rounded-xl ">
+                <div class="flex justify-center items-center overflow-hidden">
+                    <div class="w-5/6">
+                        <h2 class="text-5xl font-bold text-white pb-4">Meet Our Super Clients</h2>
+                        <p class="text-2xl text-white pb-4">A client review is a meeting or process that provides feedback from a client to a business.
+                           Client reviews can help businesses build trust, improve relationships, and grow their business.
+                           </p>
+                           <button class="px-3 py-2 text-green-600 bg-white rounded-lg hover:bg-stone-400">Show All</button>
+                    </div>
+                </div>
+                <div class="relative py-24">
+                    <div class="absolute z-10 top-44 md:top-52">
+                        <div class="h-56 w-full md:w-3/4 bg-white text-gray-500 rounded-lg flex items-center px-5">
+                            <div class="absolute -top-5 -left-5 bg-white rounded-full">
+                                <img src="c2-assets/client.png" alt="">
+                            </div>
+                            <div>
+                                <p class="text-gray-500">We are providing the best and suitable home delivery
+                                     services for the people who are interested to take.
+                                </p>
+                                <h1 class="font-bold text-black">Ilham Yuda</h1>
+                                <small class="font-bold text-gray-500">Businessman</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative  opacity-40 left-8 md:left-32 h-56 w-full md:w-3/4 bg-white text-gray-500 rounded-lg flex items-center px-5">
+                        <div class="absolute -top-5 -left-5 bg-white rounded-full">
+                            <img src="c2-assets/client.png" alt="">
+                        </div>
+                        <div>
+                            <p class="text-gray-500">We are providing the best and suitable home delivery
+                                 services for the people who are interested to take.
+                            </p>
+                            <h1 class="font-bold text-black">Ilham Yuda</h1>
+                            <small class="font-bold text-gray-500">Businessman</small>
+                        </div>
+                    </div>
+                    <div class="relative opacity-40 left-8 md:left-32 top-10 h-56 w-full md:w-3/4 bg-white text-gray-500 rounded-lg flex items-center px-5">
+                        <div class="absolute -top-5 -left-5 bg-white rounded-full">
+                            <img src="c2-assets/client.png" alt="">
+                        </div>
+                        <div>
+                            <p class="text-gray-500">We are providing the best and suitable home insurance
+                                 services for the people who are interested to treatment
+                            </p>
+                            <h1 class="font-bold text-black">Ilham Yuda</h1>
+                            <small class="font-bold text-gray-500">Businessman</small>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+           </section>
+           
            <!-- news section -->
-            <section class="container mx-auto">
-              <div class="grid grid-cols-1 lg:grid-cols-2 bg-slate-300 rounded-lg mx-6">
+            <section class="container mx-auto ">
+              <div class="grid grid-cols-1 lg:grid-cols-2 bg-slate-300 rounded-lg mx-6  ">
                 <div>
                   <img src="c2-assets/vegetable-busket.png" alt="">
                 </div>
@@ -285,6 +340,28 @@
                 </div>
               </div>
             </section>
+            <!-- footer section -->
+            <footer class="footer mx-auto bg-nature-primary text-white pt-24 px-10 pb-20">
+              <aside>
+                <img src="c2-assets/logo-footer.png" alt="">
+                <p class="lg:pl-12">
+                  Discover a world of treats, toys, and <br> essentials handpicked for your furry <br> friends
+                </p>
+              </aside>
+              <nav class="lg:pl-16">
+                <a class="link link-hover">Product</a>
+                <a class="link link-hover">Services</a>
+                <a class="link link-hover">Contact us</a>
+              </nav>
+              <div class="lg:pl-28">
+                <h6 class="footer-title">Follow Us</h6>
+                <div class="flex justify-between ">
+                  <i class="fa-brands fa-facebook"></i>
+                  <i class="fa-brands fa-square-instagram px-3"></i>
+                  <i class="fa-brands fa-square-twitter"></i>
+                </div>  
+              </div>
+            </footer>
 
     </main>
 </body>
